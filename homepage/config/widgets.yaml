@@ -14,4 +14,4 @@
 - datetime:
       text_size: xl
       format:
-          timeStyle: short
+      timeStyle: short

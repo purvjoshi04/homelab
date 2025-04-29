@@ -192,5 +192,29 @@
     at bd (/app/node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:77:404)
     at Z (/app/node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:76:217)
     at $c (/app/node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:78:98)
-    at Zc (/app/node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:71:145)
-[2025-04-29T07:37:55.157Z] error: undefined
+    at Zc (/app/node_modules/.pnpm/react-dom@18.3.1_react@18.3.1/node_modules/react-dom/cjs/react-dom-server.browser.production.min.js:71:145)[2025-04-29T09:15:04.248Z] warn: <service-helpers> Error parsing service "DuckDNS" from config. Ensure required fields are present.
+[2025-04-29T09:15:04.288Z] warn: <service-helpers> Error parsing service "DuckDNS" from config. Ensure required fields are present.
+[2025-04-29T09:15:04.620Z] warn: <service-helpers> Error parsing service "DuckDNS" from config. Ensure required fields are present.
+[2025-04-29T09:25:07.339Z] error: undefined
+[2025-04-29T09:25:07.353Z] error: TypeError: Cannot destructure property 'apiKey' of '(intermediate value)' as it is undefined.
+    at c (/app/.next/server/pages/api/widgets/openweathermap.js:1:2646)
+    at async X (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:20:18441)
+    at async z.render (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/compiled/next-server/pages-api.runtime.prod.js:20:19237)
+    at async NextNodeServer.runApi (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:664:9)
+    at async NextNodeServer.handleCatchallRenderRequest (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/next-server.js:301:37)
+    at async NextNodeServer.handleRequestImpl (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/base-server.js:895:17)
+    at async invokeRender (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:247:21)
+    at async handleRequest (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:438:24)
+    at async requestHandlerImpl (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/router-server.js:462:13)
+    at async Server.requestListener (/app/node_modules/.pnpm/next@15.2.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/server/lib/start-server.js:158:13)
+[2025-04-29T09:36:20.369Z] error: Failed to load services.yaml, please check for errors
+[2025-04-29T09:36:20.369Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2025-04-29T09:36:20.373Z] error: Failed to load services.yaml, please check for errors
+[2025-04-29T09:36:20.373Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2025-04-29T09:36:20.565Z] error: Failed to load services.yaml, please check for errors
+[2025-04-29T09:36:20.565Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2025-04-29T09:36:24.128Z] error: Failed to load services.yaml, please check for errors
+[2025-04-29T09:36:24.129Z] error: TypeError: Cannot read properties of null (reading 'forEach')
+[2025-04-29T09:36:32.237Z] warn: <service-helpers> Error parsing service "Test1" from config. Ensure required fields are present.
+[2025-04-29T09:36:32.240Z] warn: <service-helpers> Error parsing service "Test1" from config. Ensure required fields are present.
+[2025-04-29T09:36:32.464Z] warn: <service-helpers> Error parsing service "Test1" from config. Ensure required fields are present.
