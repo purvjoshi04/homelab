@@ -11,5 +11,5 @@ services:
       - TOKEN=${TOKEN}
       - LOG_FILE=yes
     volumes:
-      - /home/gmits72/Documents/homelab/DuckDns/config:/config
+      - ./DuckDns/config:/config
     restart: unless-stopped
