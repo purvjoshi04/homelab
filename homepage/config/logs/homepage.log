@@ -218,3 +218,13 @@
 [2025-04-29T09:36:32.237Z] warn: <service-helpers> Error parsing service "Test1" from config. Ensure required fields are present.
 [2025-04-29T09:36:32.240Z] warn: <service-helpers> Error parsing service "Test1" from config. Ensure required fields are present.
 [2025-04-29T09:36:32.464Z] warn: <service-helpers> Error parsing service "Test1" from config. Ensure required fields are present.
+[2025-04-30T06:18:42.103Z] error: <httpProxy> Error calling https://api.github.com/repos/gethomepage/homepage/releases...
+[2025-04-30T06:18:42.124Z] error: <httpProxy> [
+  500,
+  [Error: getaddrinfo EAI_AGAIN api.github.com] {
+    errno: -3001,
+    code: 'EAI_AGAIN',
+    syscall: 'getaddrinfo',
+    hostname: 'api.github.com'
+  }
+]
