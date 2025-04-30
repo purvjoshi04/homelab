@@ -1,0 +1,5 @@
+Homepage/.env
+logs/
+DuckDns/.env
+NPM/data
+NPM/letsencrypt
