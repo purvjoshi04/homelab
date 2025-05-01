@@ -12,3 +12,12 @@ services:
     environment:
       PUID: $PUID
       PGID: $PGID
+      HOMEPAGE_ALLOWED_HOSTS: $HOMEPAGE_ALLOWED_HOSTS
+    networks:
+      - homelab
+    restart: unless-stopped
+
+networks:
+  homelab:
+    external: true
+    name: homelab
