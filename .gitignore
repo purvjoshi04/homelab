@@ -1,5 +1,6 @@
-Homepage/.env
+homepage/.env
 logs/
-DuckDns/.env
-NPM/data
-NPM/letsencrypt
+duckdns/.env
+nginx-proxy-manager/data
+nginx-proxy-manager/letsencrypt
+nextcloud/.env

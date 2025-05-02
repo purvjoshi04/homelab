@@ -7,6 +7,10 @@
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/nextcloud.png
         href: "{{HOMEPAGE_VAR_NEXTCLOUD_URL}}"
         description: storage
+    - Nginx-Proxy-Manager:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/nginx-proxy-manager.png
+        href: "{{HOMEPAGE_VAR_NPM_URL}}"
+        description: nginx proxy manager dashboard
 - Tools:
     - DuckDNS:
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/duckdns.png
