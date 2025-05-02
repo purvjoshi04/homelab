@@ -4,3 +4,4 @@ duckdns/.env
 nginx-proxy-manager/data
 nginx-proxy-manager/letsencrypt
 nextcloud/.env
+portainer_data
