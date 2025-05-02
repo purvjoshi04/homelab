@@ -9,9 +9,9 @@ services:
       - ./config:/app/config
       - /var/run/docker.sock:/var/run/docker.sock
     environment:
-      PUID: $PUID
-      PGID: $PGID
-      HOMEPAGE_ALLOWED_HOSTS: $HOMEPAGE_ALLOWED_HOSTS
+       PUID: $PUID
+       PGID: $PGID
+       HOMEPAGE_ALLOWED_HOSTS: $HOMEPAGE_ALLOWED_HOSTS
     networks:
       - homelab
     restart: unless-stopped

@@ -11,6 +11,13 @@
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/nginx-proxy-manager.png
         href: "{{HOMEPAGE_VAR_NPM_URL}}"
         description: nginx proxy manager dashboard
+    - Portainer:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/portainer.png
+        href: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
+        description: container manager
+
+
+
 - Tools:
     - DuckDNS:
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/duckdns.png
