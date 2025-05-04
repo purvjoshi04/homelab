@@ -11,13 +11,13 @@ services:
       MYSQL_USER: $MYSQL_USER
     volumes:
       - db:/var/lib/mysql
+    networks:
+      - homelab
 
   app:
     image: nextcloud
     container_name: nextcloud
     restart: always
-    ports:
-      - 8080:80
     links:
       - db
     volumes:
@@ -27,6 +27,8 @@ services:
       MYSQL_DATABASE: $MYSQL_DATABASE
       MYSQL_USER: $MYSQL_USER
       MYSQL_HOST: db
+    networks:
+      - homelab
 
 networks:
   homelab:

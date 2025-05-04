@@ -2,12 +2,17 @@ services:
   portainer:
     image: portainer/portainer-ce:2.29.0-alpine
     container_name: portainer
-    ports:
-      - 9000:9000
     volumes:
-      - ./portainer_data:/data
       - /var/run/docker.sock:/var/run/docker.sock
+      - ./portainer_data:/data
     restart: unless-stopped
+    networks:
+      - homelab
+
+networks:
+  homelab:
+    external: true
+    name: homelab
 
 volumes:
   portainer_data:
