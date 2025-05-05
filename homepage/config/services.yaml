@@ -28,6 +28,12 @@
         href: "{{HOMEPAGE_VAR_TAILSCALE_URL}}"
         description: VPN
 
+- Monitoring:
+    - Kuma:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptime-kuma.png
+        href: "{{HOMEPAGE_VAR_KUMA_URL}}"
+        description: monitoring dashboard
+
 - SelfHosted:
     - Test1:
         description: test
