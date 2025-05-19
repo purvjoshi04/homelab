@@ -1,32 +1,15 @@
 services:
-  db:
-    image: mariadb
-    container_name: nextcloud_db
-    restart: always
-    command: --transaction-isolation=READ-COMMITTED --binlog-format=ROW
-    environment:
-      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
-      MYSQL_PASSWORD: $MYSQL_PASSWORD
-      MYSQL_DATABASE: $MYSQL_DATABASE
-      MYSQL_USER: $MYSQL_USER
-    volumes:
-      - db:/var/lib/mysql
-    networks:
-      - homelab
-
-  app:
-    image: nextcloud
+  nextcloud:
+    image: lscr.io/linuxserver/nextcloud:latest
     container_name: nextcloud
-    restart: always
-    links:
-      - db
-    volumes:
-      - /mnt/storage/nextcloud-data:/var/www/html/data
     environment:
-      MYSQL_PASSWORD: $MYSQL_PASSWORD
-      MYSQL_DATABASE: $MYSQL_DATABASE
-      MYSQL_USER: $MYSQL_USER
-      MYSQL_HOST: db
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - TZ=Asia/Kolkata
+    volumes:
+      - ${PATH_CONFIG}:/config
+      - ${PATH_DATA}:/data
+    restart: unless-stopped
     networks:
       - homelab
 
@@ -35,5 +18,3 @@ networks:
     external: true
     name: homelab
 
-volumes:
-  db:

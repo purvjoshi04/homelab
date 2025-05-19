@@ -17,7 +17,6 @@
         description: container manager
 
 
-
 - Tools:
     - DuckDNS:
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/duckdns.png
@@ -34,6 +33,3 @@
         href: "{{HOMEPAGE_VAR_KUMA_URL}}"
         description: monitoring dashboard
 
-- SelfHosted:
-    - Test1:
-        description: test
