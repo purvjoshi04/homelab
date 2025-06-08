@@ -31,8 +31,12 @@
         href: "{{HOMEPAGE_VAR_ROUTER_URL}}"
         description: home router admin panel
 
-- Monitoring:
+- Monitoring & Notification:
     - Kuma:
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptime-kuma.png
         href: "{{HOMEPAGE_VAR_KUMA_URL}}"
         description: monitoring dashboard
+    - Gotify:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/gotify.png
+        href: "{{HOMEPAGE_VAR_GOTIFY_URL}}"
+        description: service status notification dashboard

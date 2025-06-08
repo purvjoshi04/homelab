@@ -4,3 +4,4 @@ duckdns/.env
 nextcloud/.env
 portainer/.env
 kuma/.env
+gotify/.env

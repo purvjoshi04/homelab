@@ -1,0 +1,18 @@
+services:
+  gotify:
+    image: gotify/server
+    container_name: gotify
+    volumes:
+      - $GOTIFY_DATA_PATH:/app/data
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - homelab
+    environment:
+      - TZ=Asia/Kolkata
+
+networks:
+  homelab:
+    external: true
+    name: homelab
