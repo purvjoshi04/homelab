@@ -1,8 +1,6 @@
 homepage/.env
 logs/
 duckdns/.env
-nginx-proxy-manager/data
-nginx-proxy-manager/letsencrypt
 nextcloud/.env
-portainer_data
-kuma/data
+portainer/.env
+kuma/.env

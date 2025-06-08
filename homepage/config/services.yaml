@@ -26,10 +26,13 @@
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/tailscale-light.png
         href: "{{HOMEPAGE_VAR_TAILSCALE_URL}}"
         description: VPN
+    - Router:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/router.png
+        href: "{{HOMEPAGE_VAR_ROUTER_URL}}"
+        description: home router admin panel
 
 - Monitoring:
     - Kuma:
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/uptime-kuma.png
         href: "{{HOMEPAGE_VAR_KUMA_URL}}"
         description: monitoring dashboard
-

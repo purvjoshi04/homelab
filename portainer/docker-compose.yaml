@@ -4,7 +4,7 @@ services:
     container_name: portainer
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
-      - ./portainer_data:/data
+      - $PORTAINER_DATA_PATH:/data
     restart: unless-stopped
     networks:
       - homelab
@@ -13,6 +13,3 @@ networks:
   homelab:
     external: true
     name: homelab
-
-volumes:
-  portainer_data:
