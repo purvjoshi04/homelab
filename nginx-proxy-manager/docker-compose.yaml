@@ -1,15 +1,15 @@
 services:
   NPM:
-    image: 'jc21/nginx-proxy-manager:latest'
+    image: 'jc21/nginx-proxy-manager:2.12.3'
     container_name: nginx-proxy-manager
     restart: unless-stopped
     ports:
-      - '127.0.0.1:80:80'
-      - '127.0.0.1:81:81'
-      - '127.0.0.1:443:443'
+      - '100.70.38.14:80:80'
+      - '81:81'
+      - '100.70.38.14:443:443'
     volumes:
-      - /mnt/storage/nginx_proxy_manager/data:/data
-      - /mnt/storage/nginx_proxy_manager/letsencrypt:/etc/letsencrypt
+      - $NPM_DATA_PATH:/data
+      - $NPM_CERTS_PATH:/etc/letsencrypt
     networks:
       - homelab
     dns:

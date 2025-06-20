@@ -1,5 +1,5 @@
 services:
-  nextcloud:
+ nextcloud:
     image: lscr.io/linuxserver/nextcloud:latest
     container_name: nextcloud
     environment:

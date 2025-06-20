@@ -5,3 +5,4 @@ nextcloud/.env
 portainer/.env
 kuma/.env
 gotify/.env
+nginx-proxy-manager/.env
