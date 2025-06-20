@@ -4,9 +4,9 @@ services:
     container_name: nginx-proxy-manager
     restart: unless-stopped
     ports:
-      - '100.70.38.14:80:80'
+      - '127.0.0.1:80:80'
       - '81:81'
-      - '100.70.38.14:443:443'
+      - '127.0.0.1:443:443'
     volumes:
       - $NPM_DATA_PATH:/data
       - $NPM_CERTS_PATH:/etc/letsencrypt
