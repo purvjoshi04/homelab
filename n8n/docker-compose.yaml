@@ -1,0 +1,30 @@
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    container_name: n8n
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - $N8N_DATA_PATH:/home/node/.n8n
+      - $N8N_FILES_PATH:/files
+    depends_on:
+      - postgres
+    networks:
+      - homelab
+
+  postgres:
+    image: postgres:15
+    container_name: n8n_postgres
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - $N8N_POSTGRES_DATA_PATH/postgres-data:/var/lib/postgresql/data
+    networks:
+      - homelab
+
+networks:
+  homelab:
+    external: true
+    name: homelab

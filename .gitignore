@@ -6,3 +6,4 @@ portainer/.env
 kuma/.env
 gotify/.env
 nginx-proxy-manager/.env
+n8n/.env
