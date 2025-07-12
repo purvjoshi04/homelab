@@ -15,6 +15,10 @@
         icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/portainer.png
         href: "{{HOMEPAGE_VAR_PORTAINER_URL}}"
         description: container manager
+    - n8n:
+        icon: https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/png/n8n.png
+        href: "{{HOMEPAGE_VAR_N8N_URL}}"
+        description: automation workflow
 
 
 - Tools:
